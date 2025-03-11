@@ -3,19 +3,18 @@
 using namespace std;
 
 int main(){
-    int i = 1;
+    int i = 1345;
 
     int sum = 0;
 
 
-    while (i<=6)
+    while (i>0)
     {
-        sum = sum + i;
-
-        i++;
-        cout << sum << endl;
+       i = i/10;
+        sum++;
     }
-    
+    cout << sum << endl;
+
     return 0;
 
 }
