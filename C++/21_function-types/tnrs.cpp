@@ -1,0 +1,28 @@
+#include<iostream>
+
+using namespace std;
+
+int sum(){
+
+    int num = 10;
+    int sum = 0;
+
+    for (int i=1; i<=num; i++)
+    {
+        sum = sum + 1;
+    }
+    
+    return 40;
+}
+
+int main(){
+
+    // int a = 100; 
+    // int b = a;
+
+    int avg = sum()/10;
+
+    cout << "sum is " << avg;
+
+    return 0;
+}
