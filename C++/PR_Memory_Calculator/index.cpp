@@ -35,19 +35,24 @@ class Studentlist{
             {
                 if (s.id == id)
                 {
-                    cout << "Enter id to serach " << id << " name: " << s.name << endl;
+                    cout << "id: " << id << " name: " << s.name << endl;
                 }  
             }
         }
 
-        void removeStudent(int id){
-            for (Student s : list)
-            {
-                if (s.id == id)
-                {
-                    cout << "Enter id to remove " << list.e
-                }
-            }
+        void removeStudent(int id)
+        {
+           cout << "Enter ID to remove: ";
+           cin >> id;
+           for(int i = 0; i <  list.size(); i++)
+           {
+             if(list[i].id == id)
+             {
+              list.erase(list.begin() +1);
+                  cout << "Student removed successfully." << endl;
+                  return;
+             }
+           }
             
         }
 };
@@ -61,6 +66,11 @@ int  main(){
 
     while (choice!=0)
     {
+        cout << "Press 1 for add student to a list" << endl;
+        cout << "Press 2 for search student by id" << endl;
+        cout << "Press 3 for remove a student from the list by id" << endl;
+        cout << "Press 4 for display the list of student" << endl;
+
         cout << "Choice: ";
         cin >> choice;
 
